@@ -11,11 +11,11 @@
 <body>
     
     <!-- nav bar -->
-    <div class="flex px-10 md:px-0 justify-between md:justify-around items-center w-full h-[5rem] shadow-lg">
+    <div class="navbar relative flex px-10 md:px-0 justify-between md:justify-around items-center w-full h-[4rem] shadow-lg">
         <div>
-            <img src="./assets/logo.svg" alt="logo" width="200px"/>
+            <img src="./assets/logo.svg" alt="logo" width="150px"/>
         </div>
-        <div  class="hidden md:flex justify-between items-center w-[50%] text-md">
+        <div  class="hidden md:flex justify-between items-center w-[40%] text-md">
             <div class="h-full transition ease-in-out delay-150 hover:scale-110 hover:text-[#6c63ff] duration-300">
                 <a href="#">
                     <span>Product</span>
@@ -23,7 +23,7 @@
             </div>
             <div class="h-full transition ease-in-out delay-150 hover:scale-110 hover:text-[#6c63ff] duration-300">
                 <a href="#">
-                    <span>Case Study</span>
+                    <span>Case Studies</span>
                 </a>
             </div >
             <div class="h-full transition ease-in-out delay-150 hover:scale-110 hover:text-[#6c63ff] duration-300">
@@ -36,23 +36,22 @@
                     <span>Contact</span>
                 </a>
             </div>
-            <div class="p-3 bg-[#000] text-[#fff] rounded-md hover:bg-[#6c63ff] h-full transition ease-in-out delay-150 hover:scale-110 duration-300">
-                <a href="#" >
-                    <span>Get Started</span>
-                </a>
-            </div>
+            <a href="#" class="px-3 py-2 bg-[#000] text-[#fff] rounded-md hover:bg-[#6c63ff] h-full transition ease-in-out delay-150 hover:scale-[1.05] duration-300">
+                <span>Get Started</span>
+            </a>
+            
+        </div>
+        <!-- hamburger -->
+        <div class="absolute md:hidden flex flex-col gap-2 top-7 right-10 hamburger">
+            <div class="w-[35px] h-[2px] bg-[#000]"></div>
+            <div class="w-[35px] h-[2px] bg-[#000]"></div>
+            <div class="w-[35px] h-[2px] bg-[#000]"></div>        
         </div>
     </div>
 
-    <!-- hamburger -->
-    <div class="md:hidden flex flex-col gap-2 fixed top-7 right-10 z-[200] ham" id="ham">
-        <div class="w-[35px] h-[2px] bg-[#000]"></div>
-        <div class="w-[35px] h-[2px] bg-[#000]"></div>
-        <div class="w-[35px] h-[2px] bg-[#000]"></div>        
-    </div>
 
     <!-- mobile menu -->
-    <div class="w-full h-screen bd flex md:hidden items-center justify-between pt-[2rem]">
+    <div class="w-full h-screen mobileMenu flex md:hidden items-center justify-between pt-[2rem]">
         <div  class="flex flex-col justify-between items-center w-full h-[400px] text-lg text-[#fff]">
             <div class="w-full text-center h-full transition ease-in-out delay-150 hover:scale-110 duration-300">
                 <a href="#">Products</a>
@@ -71,6 +70,109 @@
             </div>
             
         </div>
+    </div>
+
+    <!-- hero section -->
+    <div class="hero relative pt-[2rem]">
+        <div class="flex w-full h-auto flex-col gap-1 justify-center items-center px-6  md:px-0 text-center">
+            <h1 class="hero-t-1 text-4xl font-bold">Save 50% for 12 months</h1>
+            <h2 class="hero-t-2 text-3xl text-[#18181b]">Simple, transparent pricing</h2>
+            <span class="hero-t-3 text-md text-[#71717a]">No hidden or surprise fees.</span>
+        </div>
+
+        <div class="flex flex-col md:flex-row [100%] justify-center items-center mt-8">
+            <!-- card -->
+            <div class="w-full md:w-[80%] flex flex-col md:flex-row justify-center items-center gap-x-[2rem] gap-y-[2rem]">
+                <div class="card-1 flex flex-col gap-y-2 w-[300px] md:w-[240px] bg-[#fff] border-2 border-[#737373] rounded-xl py-8 md:py-4 px-8 transition ease-in-out delay-150 hover:scale-[1.05] duration-300">
+                    <h2 class="text-2xl font-light">Lite</h2>
+                    <div>
+                        <span class="text-3xl">19 $</span>
+                        <span>/ month</span>
+                    </div>
+                    <span class="text-sm font-light text-[#71717a]">For small and medium scale businesses</span>
+                    <div class="flex flex-col gap-y-4 my-2 text-sm">
+                        <div class="flex gap-x-2">
+                            <img src="./assets/circle-check-solid.svg" alt="check" width="15">
+                            <span>20 users</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="./assets/circle-check-solid.svg" alt="check" width="15">
+                            <span>200 transitions</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="./assets/circle-check-solid.svg" alt="check" width="15">
+                            <span>100MB Storage</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="./assets/circle-check-solid.svg" alt="check" width="15">
+                            <span>Api Access</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="./assets/circle-check-solid.svg" alt="check" width="15">
+                            <span>Email Suport</span>
+                        </div>
+                    </div>
+                    <div class="flex w-full justify-center">
+                        <button class="bg-[#000] w-full py-2 px-4 rounded-md text-[#fff] transition ease-in-out delay-150 hover:scale-[1.05] hover:text-[#fff] hover:bg-[#6c63ff] duration-300">
+                            <a href="#">Buy Now</a>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="card-2 flex flex-col gap-y-2 w-[300px] md:w-[240px] border-2 border-[#737373] rounded-xl py-8 md:py-4 px-8 bg-[#000] text-[#fff] transition ease-in-out delay-150 hover:scale-[1.05] duration-300">
+                    <h2 class="text-2xl font-light">Premium</h2>
+                    <div>
+                        <span class="text-3xl">199 $</span>
+                        <span>/ month</span>
+                    </div>
+                    <span class="text-sm font-light text-[#71717a]">For large scale enterprises and businesses</span>
+                    <div class="flex flex-col gap-y-4 my-2 text-sm">
+                        <div class="flex gap-x-2">
+                            <img src="./assets/circle-check-solid-white.svg" alt="check" width="15">
+                            <span>100 users</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="./assets/circle-check-solid-white.svg" alt="check" width="15">
+                            <span>1000 transitions</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="./assets/circle-check-solid-white.svg" alt="check" width="15">
+                            <span>500MB Storage</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="./assets/circle-check-solid-white.svg" alt="check" width="15">
+                            <span>Api Access</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="./assets/circle-check-solid-white.svg" alt="check" width="15">
+                            <span>Email Suport</span>
+                        </div>
+                    </div>
+                    <div class="flex w-full justify-center">
+                        <button class="bg-[#fff] w-full py-2 px-4 rounded-md text-[#000] transition ease-in-out delay-150 hover:scale-[1.05] hover:text-[#fff] hover:bg-[#6c63ff] duration-300">
+                            <a href="#">Buy Now</a>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="w-full lg:w-[50%] my-[3rem] md:mt-0">
+                <div class="hero-img hidden md:block">
+                    <img src="./assets/image.svg" alt="img" width="300">
+                </div>
+                <div class="hero-text text-center lg:text-start">
+                    <p class="md:text-[#fff] md:w-[250px]">Need a custom pricing packages, unique for yor business?</p>
+                    <button class="bg-[#6c63ff] text-[#fff] md:bg-[#fff] mt-4 py-2 px-4 rounded-md md:text-[#000] transition ease-in-out delay-150 hover:scale-[1.05] duration-300">
+                        <a href="#">Contact Sales</a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bt-line w-full hidden md:block absolute h-[220px] bg-[#6c63ff] bottom-0 -z-50"></div>
+
     </div>
 
 

@@ -1,4 +1,4 @@
-.bd{
+.mobileMenu{
     position: fixed;
     background: #6c63ff;
     height: 100vh;
@@ -7,13 +7,78 @@
     clip-path: circle(100px at 100% -30%);
     transition: all 1s ease-out;
     pointer-events: none;
+    z-index:100;
 }
 
-.bd.active{
-    clip-path: circle(1000px at 100% -10%);
+.mobileMenu.active{
+    clip-path: circle(1200px at 100% -10%);
     pointer-events: all;
 }
 
-.hm.active:nth-child(:last-child){
-    display: none;
+
+@keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.navbar{
+    animation: fade-down 0.5s;
+}
+
+.hero-t-1{
+    animation: fade-down 0.7s;
+}
+
+.hero-t-2{
+    animation: fade-down 0.9s;
+}
+
+.hero-t-3{
+    animation: fade-down 1.2s;
+}
+
+.bt-line{
+    animation: fade-in 0.9s;
+}
+
+.card-1{
+    animation: fade-up 0.5s;
+}
+
+.card-2{
+    animation: fade-up 0.7s;
+}
+
+.hero-img{
+    animation: fade-up 0.9s;
+}
+
+.hero-text{
+    animation: fade-up 1.2s;
 }
