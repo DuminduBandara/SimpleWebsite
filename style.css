@@ -1,0 +1,19 @@
+.bd{
+    position: fixed;
+    background: #6c63ff;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 100% -30%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+}
+
+.bd.active{
+    clip-path: circle(1000px at 100% -10%);
+    pointer-events: all;
+}
+
+.hm.active:nth-child(:last-child){
+    display: none;
+}
